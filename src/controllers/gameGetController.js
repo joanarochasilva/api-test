@@ -23,7 +23,7 @@ export default async function gameGetController(req, res) {
         return res.status(404).json({ message: 'User not found' });
     }
 
-    if (role === 'ADMINISTRADOR') {
+    if (role === 'ADMIN') {
         const jogosData = await readData('jogo');
         const jogos = jogosData.filter(jogo => jogo.id_usuario_adm === id_usuario);
 

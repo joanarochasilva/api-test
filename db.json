@@ -1,11 +1,11 @@
 {
   "usuarios": [
     {
-      "id_usuario": "e2b3b64f-6174-48aa-842b-2037627bd23e",
-      "nome": "pedro silva",
-      "email": "pedro.silva@email.com",
-      "senha": "$2b$10$Mz6D5cnzIsQdAyu7UJrcg.5ymClC8DXsR8eoiRsYrgrXJ71wIvNd6",
-      "tipo_usuario": "ESTUDANTE",
+      "id_usuario": "b3bd0d1a-4891-435c-a70b-031cf666c506",
+      "nome": "José Silva",
+      "email": "prof@teste.com",
+      "senha": "$2a$10$aeXKpIjWAdmoDG26zeZrDeKdM6hQDlOdOnvaw0B9hRiP17axFf0ui",
+      "tipo_usuario": "PROFESSOR",
       "data_criacao": "2025-11-20T14:37:18.390Z",
       "data_atualizacao": "2025-11-20T14:37:18.394Z",
       "ativo": "ATIVO"
@@ -14,31 +14,41 @@
       "id_usuario": "469efaa5-c253-49ca-8017-f19356df3c2e",
       "nome": "Joana Aluna",
       "email": "joana@unifase.com",
-      "senha": "$2a$10$aDz4v4wNWg3Q3vFK3YvRm.pW2eLkepj3PDEW.WsjT5ad5HwXTMJV6",
+      "senha": "$2a$10$aeXKpIjWAdmoDG26zeZrDeKdM6hQDlOdOnvaw0B9hRiP17axFf0ui",
       "tipo_usuario": "ALUNO",
       "data_criacao": "2025-11-21T17:45:26.501Z",
       "data_atualizacao": "2025-11-21T17:45:26.505Z",
       "ativo": "ATIVO"
     },
     {
-      "id_usuario": "da7f5356-3b6d-4795-813c-3c02e227f41e",
-      "nome": "Lucas Silva",
-      "email": "lucas.silva@example.com",
-      "senha": "$2a$10$Z0nR6xlVI0SjH7YU8REHievDql7GFuIZKwD7mmrcWhVT.SUnGIaMu",
-      "tipo_usuario": "ALUNO",
+      "id_usuario": "c857143c-1ebc-488a-81d2-cbee5b6fd37c",
+      "nome": "Adm",
+      "email": "admin@admin.com",
+      "senha": "$2a$10$aeXKpIjWAdmoDG26zeZrDeKdM6hQDlOdOnvaw0B9hRiP17axFf0ui",
+      "tipo_usuario": "ADMIN",
       "data_criacao": "2025-11-21T20:18:26.453Z",
       "data_atualizacao": "2025-11-21T20:18:26.453Z",
       "ativo": "ATIVO"
     },
     {
-      "id_usuario": "d4e307c1-01f0-4f73-926a-b73578b3e4a7",
-      "nome": "Maria Costa",
-      "email": "maria.costa@example.com",
+      "id_usuario": "0460e47a-68d7-4304-bc1d-28864da914c7",
+      "nome": "Marcus Aluno",
+      "email": "marcus@unifase.com",
       "senha": "$2a$10$aeXKpIjWAdmoDG26zeZrDeKdM6hQDlOdOnvaw0B9hRiP17axFf0ui",
       "tipo_usuario": "ALUNO",
       "data_criacao": "2025-11-22T11:34:31.607Z",
       "data_atualizacao": "2025-11-22T11:34:31.607Z",
       "ativo": "PENDING"
+    },
+    {
+      "id_usuario": "64fdf737-a031-43a2-b520-b7110c619dbd",
+      "nome": "Lucas Silva",
+      "email": "lucas@unifase.com",
+      "senha": "$2a$10$aeXKpIjWAdmoDG26zeZrDeKdM6hQDlOdOnvaw0B9hRiP17axFf0ui",
+      "tipo_usuario": "ALUNO",
+      "data_criacao": "2025-11-22T11:34:31.607Z",
+      "data_atualizacao": "2025-11-22T11:34:31.607Z",
+      "ativo": "ATIVO"
     }
   ],
   "professor_jogo": [
@@ -92,13 +102,13 @@
     {
       "id_estudante_grupo": "EG002",
       "id_grupo": "G002",
-      "id_usuario": "d4e307c1-01f0-4f73-926a-b73578b3e4a7",
+      "id_usuario": "64fdf737-a031-43a2-b520-b7110c619dbd",
       "adicionado_em": "2025-10-04T13:10:00Z"
     },
     {
       "id_estudante_grupo": "EG003",
       "id_grupo": "G001",
-      "id_usuario": "da7f5356-3b6d-4795-813c-3c02e227f41e",
+      "id_usuario": "0460e47a-68d7-4304-bc1d-28864da914c7",
       "adicionado_em": "2025-10-04T13:20:00Z"
     }
   ],
