@@ -14,7 +14,7 @@ export default async function getRounds(req, res) {
         return res.status(400).json({ error: 'Tipo de usuário é obrigatório.' });
     }
 
-    if (role !== 'ALUNO') {
+    if (role === 'ALUNO') {
         const estudante_grupo = await readData('estudante_grupo').then(data => data.find(item => item.id_usuario === id)).then(item => item ? item.id_grupo : null);
         if (!estudante_grupo) {
             return res.status(404).json({ error: 'Grupo do usuário não encontrado.' });
@@ -26,8 +26,7 @@ export default async function getRounds(req, res) {
     }
 
     if(role === 'PROFESSOR') {
-        const professor_jogo = await readData('professor_jogo').then(data => data.find(item => item.id_usuario === id)).then(item => item.id_jogo);
-
+        const professor_jogo = await readData('professor_jogo').then(data => data.find(item => item.id_professor === id)).then(item => item ? item.id_jogo : null);
         if (!professor_jogo) {
             return res.status(404).json({ error: 'Jogo do professor não encontrado.' });
         }
@@ -44,6 +43,6 @@ export default async function getRounds(req, res) {
     if (!rounds || rounds.length === 0) {
         return res.status(404).json({ error: 'Rodadas do jogo não encontradas.' });
     }
-
-    return res.status(200).json({ rodadas: rounds });
+    
+    return res.status(200).json({ rounds: rounds });
 }
