@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "json-server": "^0.17.4"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "json-server-auth": "^2.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.11",
+    "uuid": "^13.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon --watch db.json --exec node ./src/server.js",
+    "start:api": "json-server --watch db.json --port 3001 -m ./node_modules/json-server-auth"
+  }
+}

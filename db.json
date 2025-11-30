@@ -1,0 +1,347 @@
+{
+  "usuarios": [
+    {
+      "id_usuario": "e2b3b64f-6174-48aa-842b-2037627bd23e",
+      "nome": "pedro silva",
+      "email": "pedro.silva@email.com",
+      "senha": "$2b$10$Mz6D5cnzIsQdAyu7UJrcg.5ymClC8DXsR8eoiRsYrgrXJ71wIvNd6",
+      "tipo_usuario": "ESTUDANTE",
+      "data_criacao": "2025-11-20T14:37:18.390Z",
+      "data_atualizacao": "2025-11-20T14:37:18.394Z",
+      "ativo": "ATIVO"
+    },
+    {
+      "id_usuario": "469efaa5-c253-49ca-8017-f19356df3c2e",
+      "nome": "Joana Aluna",
+      "email": "joana@unifase.com",
+      "senha": "$2a$10$aDz4v4wNWg3Q3vFK3YvRm.pW2eLkepj3PDEW.WsjT5ad5HwXTMJV6",
+      "tipo_usuario": "ALUNO",
+      "data_criacao": "2025-11-21T17:45:26.501Z",
+      "data_atualizacao": "2025-11-21T17:45:26.505Z",
+      "ativo": "ATIVO"
+    },
+    {
+      "id_usuario": "da7f5356-3b6d-4795-813c-3c02e227f41e",
+      "nome": "Lucas Silva",
+      "email": "lucas.silva@example.com",
+      "senha": "$2a$10$Z0nR6xlVI0SjH7YU8REHievDql7GFuIZKwD7mmrcWhVT.SUnGIaMu",
+      "tipo_usuario": "ALUNO",
+      "data_criacao": "2025-11-21T20:18:26.453Z",
+      "data_atualizacao": "2025-11-21T20:18:26.453Z",
+      "ativo": "ATIVO"
+    },
+    {
+      "id_usuario": "d4e307c1-01f0-4f73-926a-b73578b3e4a7",
+      "nome": "Maria Costa",
+      "email": "maria.costa@example.com",
+      "senha": "$2a$10$aeXKpIjWAdmoDG26zeZrDeKdM6hQDlOdOnvaw0B9hRiP17axFf0ui",
+      "tipo_usuario": "ALUNO",
+      "data_criacao": "2025-11-22T11:34:31.607Z",
+      "data_atualizacao": "2025-11-22T11:34:31.607Z",
+      "ativo": "PENDING"
+    }
+  ],
+  "professor_jogo": [
+    {
+      "id_professor_jogo": "P001",
+      "id_jogo": "J001",
+      "id_usuario": "79e127b9-4700-4830-a7d8-f60f3dc2285f",
+      "id_professor": "7f5139ff-5fd3-4671-a7c6-730aca4d6c2e",
+      "tipo_permissao": "ENUNCIANTEPRINCIPAL",
+      "criado_em": "2025-10-01T11:00:00Z",
+      "ativo": true
+    }
+  ],
+
+  "jogo": [
+    {
+      "id_jogo": "J001",
+      "id_usuario_adm": "79e127b9-4700-4830-a7d8-f60f3dc2285f",
+      "id_professor_jogo": "P001",
+      "nome": "Simulação Financeira",
+      "descricao": "Jogo educativo de tomada de decisão financeira em grupo.",
+      "criado_em": "2025-10-03T08:00:00Z",
+      "atualizado_em": "2025-10-05T15:00:00Z"
+    }
+  ],
+
+  "grupo": [
+    {
+      "id_grupo": "G001",
+      "id_jogo": "J001",
+      "nome_grupo": "Equipe Alfa",
+      "numero_grupo": 1,
+      "criado_em": "2025-10-04T12:00:00Z"
+    },
+    {
+      "id_grupo": "G002",
+      "id_jogo": "J001",
+      "nome_grupo": "Equipe Beta",
+      "numero_grupo": 2,
+      "criado_em": "2025-10-04T12:10:00Z"
+    }
+  ],
+
+  "estudante_grupo": [
+    {
+      "id_estudante_grupo": "EG001",
+      "id_grupo": "G001",
+      "id_usuario": "469efaa5-c253-49ca-8017-f19356df3c2e",
+      "adicionado_em": "2025-10-04T13:00:00Z"
+    },
+    {
+      "id_estudante_grupo": "EG002",
+      "id_grupo": "G002",
+      "id_usuario": "d4e307c1-01f0-4f73-926a-b73578b3e4a7",
+      "adicionado_em": "2025-10-04T13:10:00Z"
+    },
+    {
+      "id_estudante_grupo": "EG003",
+      "id_grupo": "G001",
+      "id_usuario": "da7f5356-3b6d-4795-813c-3c02e227f41e",
+      "adicionado_em": "2025-10-04T13:20:00Z"
+    }
+  ],
+
+  "rodada": [
+    {
+      "id_rodada": "R001",
+      "id_jogo": "J001",
+      "id_cenario": "C001",
+      "numero_rodada": 1,
+      "inicio_rodada": "2025-10-06T09:00:00Z",
+      "fim_rodada": "2025-10-06T10:00:00Z",
+      "status": "ENCERRADA"
+    },
+    {
+      "id_rodada": "R002",
+      "id_jogo": "J001",
+      "id_cenario": "C001",
+      "numero_rodada": 2,
+      "inicio_rodada": "2025-10-07T09:00:00Z",
+      "fim_rodada": null,
+      "status": "EM ANDAMENTO"
+    },
+    {
+      "id_rodada": "R003",
+      "id_jogo": "J001",
+      "id_cenario": "C001",
+      "numero_rodada": 3,
+      "inicio_rodada": null,
+      "fim_rodada": null,
+      "status": "PENDENTE"
+    }
+  ],
+
+  "resultado": [
+    {
+      "id_resultado": "RES001",
+      "id_grupo": "G001",
+      "id_jogo": "J001",
+      "id_rodada": "R001",
+      "nota_grupo": 87.5,
+      "patrimonio_liquido": 0.15,
+      "caixa_atual": 15000.0,
+      "market_share": 0.25,
+      "lucro_liquido": 4200.75,
+      "pontuacao_final": 92,
+      "ranking": 1,
+      "estatisticas": { "investimentos": 3, "erros": 1 },
+      "gerado_em": "2025-10-06T11:00:00Z"
+    },
+    {
+      "id_resultado": "RES002",
+      "id_grupo": "G002",
+      "id_jogo": "J001",
+      "id_rodada": "R001",
+      "nota_grupo": 75.0,
+      "patrimonio_liquido": 0.10,
+      "caixa_atual": 10000.0,
+      "market_share": 0.15,
+      "lucro_liquido": 3000.5,
+      "pontuacao_final": 80,
+      "ranking": 2,
+      "estatisticas": { "investimentos": 2, "erros": 2 },
+      "gerado_em": "2025-10-06T11:00:00Z"
+    },
+    {
+      "id_resultado": "RES003",
+      "id_grupo": "G001",
+      "id_jogo": "J001",
+      "id_rodada": "R002",
+      "nota_grupo": 75.0,
+      "patrimonio_liquido": 0.10,
+      "caixa_atual": 10000.0,
+      "market_share": 0.15,
+      "lucro_liquido": 3000.5,
+      "pontuacao_final": 80,
+      "ranking": 2,
+      "estatisticas": { "investimentos": 2, "erros": 2 },
+      "gerado_em": "2025-11-21T12:00:00Z"
+    },
+    {
+      "id_resultado": "RES004",
+      "id_grupo": "G002",
+      "id_jogo": "J001",
+      "id_rodada": "R002",
+      "nota_grupo": 82.0,
+      "patrimonio_liquido": 0.12,
+      "caixa_atual": 12000.0,
+      "market_share": 0.18,
+      "lucro_liquido": 3500.0,
+      "pontuacao_final": 85,
+      "ranking": 1,
+      "estatisticas": { "investimentos": 3, "erros": 1 },
+      "gerado_em": "2025-11-21T12:05:00Z"
+    }
+  ],
+
+  "tipo_decisao": [
+    {
+      "id_tipo_decisao": "TD001",
+      "nome_decisao": "Investimento Inicial",
+      "descricao": "Valor inicial aplicado pela equipe",
+      "tipo_dado": "NUMERICO",
+      "obrigatorio": true
+    },
+    {
+      "id_tipo_decisao": "TD002",
+      "nome_decisao": "Escolha de Estratégia",
+      "descricao": "Seleciona o tipo de estratégia de atuação",
+      "tipo_dado": "ENUM",
+      "obrigatorio": false
+    }
+  ],
+
+  "area_decisao": [
+    {
+      "id_area_decisao": "AD001",
+      "id_tipo_decisao": "TD001",
+      "nome_area": "Financeira",
+      "ativa": true,
+      "criado_em": "2025-10-01T08:00:00Z"
+    }
+  ],
+
+  "decisao": [
+    {
+      "id_decisao": "D001",
+      "id_jogo": "J001",
+      "id_grupo": "G001",
+      "id_tipo_decisao": "TD001",
+      "status": "SUBMETIDA",
+      "criado_em": "2025-10-06T09:15:00Z"
+    },
+    {
+      "id_decisao": "D002",
+      "id_jogo": "J001",
+      "id_grupo": "G002",
+      "id_tipo_decisao": "TD002",
+      "status": "PENDENTE",
+      "criado_em": "2025-10-07T09:20:00Z"
+    }
+  ],
+
+  "item_decisao": [
+    {
+      "id_item_decisao": "I001",
+      "id_decisao": "D001",
+      "valor_escolhido": 5000,
+      "registrado_em": "2025-10-06T09:16:00Z"
+    },
+    {
+      "id_item_decisao": "I002",
+      "id_decisao": "D002",
+      "valor_escolhido": "Estratégia Conservadora",
+      "registrado_em": "2025-10-07T09:25:00Z"
+    }
+  ],
+
+  "cenario": [
+    {
+      "id_cenario": "C001",
+      "nome_cenario": "Cenário Econômico Base",
+      "descricao": "Cenário de inflação moderada e crescimento estável.",
+      "criado_em": "2025-10-01T08:30:00Z"
+    }
+  ],
+
+  "area_cenario": [
+    {
+      "id_area_cenario": "AC001",
+      "id_cenario": "C001",
+      "nome_area": "Mercado Financeiro",
+      "peso": 0.4,
+      "ativo": true,
+      "criado_em": "2025-10-01T08:35:00Z"
+    },
+    {
+      "id_area_cenario": "AC002",
+      "id_cenario": "C001",
+      "nome_area": "Setor Industrial",
+      "peso": 0.6,
+      "ativo": true,
+      "criado_em": "2025-10-01T08:40:00Z"
+    },
+    {
+      "id_area_cenario": "AC003",
+      "id_cenario": "C001",
+      "nome_area": "Noticias",
+      "peso": 0,
+      "ativo": true,
+      "criado_em": "2025-10-01T08:45:00Z"
+    }
+  ],
+
+  "condicoes_area_cenario": [
+    {
+      "id_condicao_area_cenario": "CAC001",
+      "id_area_cenario": "AC001",
+      "nome_condicao": "Inflação",
+      "tipo_condicao": "NUMERICO",
+      "valor": 3.2,
+      "criado_em": "2025-10-01T09:00:00Z"
+    },
+    {
+      "id_condicao_area_cenario": "CAC002",
+      "id_area_cenario": "AC002",
+      "nome_condicao": "Demanda Industrial",
+      "tipo_condicao": "PERCENTUAL",
+      "valor": 75,
+      "criado_em": "2025-10-01T09:05:00Z"
+    },
+    {
+      "id_condicao_area_cenario": "CAC003",
+      "id_area_cenario": "AC001",
+      "nome_condicao": "Taxa de Juros",
+      "tipo_condicao": "NUMERICO",
+      "valor": 5.5,
+      "criado_em": "2025-10-01T09:10:00Z"
+    },
+    {
+      "id_condicao_area_cenario": "CAC004",
+      "id_area_cenario": "AC002",
+      "nome_condicao": "Crescimento do Setor",
+      "tipo_condicao": "PERCENTUAL",
+      "valor": 4.8,
+      "criado_em": "2025-10-01T09:15:00Z"
+    },
+    {
+      "id_condicao_area_cenario": "CAC005",
+      "id_area_cenario": "AC001",
+      "nome_condicao": "Risco de Mercado",
+      "tipo_condicao": "ENUM",
+      "valor": "MODERADO",
+      "criado_em": "2025-10-01T09:20:00Z"
+    },
+    {
+      "id_condicao_area_cenario": "CAC006",
+      "id_area_cenario": "AC003",
+      "nome_condicao": "Noticias",
+      "tipo_condicao": "JSON",
+      "valor": [{ "id": "N001", "tema": "Crescimento econômico global", "area": "Economia", "detalhes": "Impacto nas exportações", "data": "2025-10-01T09:30:00Z", "texto": "A economia global está enfrentando desafios devido a mudanças nas políticas comerciais. O momento é de adaptação e cautela."}, {"id": "N002", "tema": "Inovações tecnológicas", "area": "Tecnologia", "data":"2025-10-01T09:30:00Z", "detalhes": "Aumento da produtividade", "texto": "Novas tecnologias estão sendo adotadas rapidamente, impulsionando a eficiência em diversos setores. Empresas que investem em inovação tendem a se destacar."}],
+      "criado_em": "2025-10-01T09:25:00Z"
+    }
+  ]
+}
+
